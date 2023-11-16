@@ -14,6 +14,8 @@
   --bio-bg-color: #212121;
   --bio-border-color: #777a7e;
   --about-bg-color: #13131F;
+  --skills-bg-color: #EBECEE;
+  --orange: #EB9B00;
 }
 
 /* General */
@@ -23,8 +25,8 @@
 
 /* Containers */
 #container {
-  display: flex;
-  flex-direction: row;
+  
+ 
   color: var(--main-text-color);
 }
 
@@ -44,10 +46,39 @@
   padding: 50px;
 }
 
-/* Bio container */
-#bio-container h2 {
-  margin-bottom: 25px;
+#projects-container {
+  flex: 1 1 80%;
+  min-height: 100vh;
+  background-color: var(--skills-bg-color);
+  padding: 50px;
+  background-color: var(--skills-bg-color);
+  color: #13131F;
 }
+
+.bio-container__grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.item1 {
+  order: 1;
+}
+
+.item2 {
+  order: 2;
+}
+
+.bio-container__grid .title {
+  flex: 1 1 0;
+  font-size: 42px;
+  margin-bottom: 25px;
+  font-weight: bold;
+
+}
+
+/* Bio container */
+
 
 #bio-container p {
   margin-bottom: 20px;
@@ -58,20 +89,12 @@
 }
 
 #bio-image {
-  width: 175px;
-  height: 175px;
+  width: 275px;
+  height: 275px;
   border-radius: 50%;
   margin-bottom: 25px;
 }
 
-#social-container {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  border-bottom: 1px solid var(--border-color);
-  margin-bottom: 25px;
-  padding-bottom: 25px;
-}
 
 #social-container li {
   flex: 1 1 0;
@@ -123,12 +146,20 @@
   margin-bottom: 10px;
 }
 
+.btns__main {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 25px;
+ 
+}
+
 #btn-projects {
   font-weight: bold;
   font-size: 16px;
   color: var(--main-text-color);
-  background-color: var(--main-color);
-  border: 2px solid var(--main-color);
+  background-color: var(--orange);
+  border: 2px solid var(--skills-bg-color);
   border-radius: 5px;
   text-decoration: none;
   transition: .5s;
@@ -137,6 +168,23 @@
   width: 150px;
   text-align: center;
   display: flex;
+}
+
+#btn-projects-two {
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--main-text-color);
+  background-color: var(--orange);
+  border: 2px solid var(--skills-bg-color);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: .5s;
+  margin: 25px 0;
+  padding: 12px 10px;
+  width: 200px;
+  text-align: center;
+  margin-left: 5px;
+ 
 }
 
 #btn-projects ion-icon,
@@ -154,7 +202,6 @@
 }
 
 #skills-section-title {
-  border-top: 1px solid var(--border-color);
   padding-top: 20px;
   margin-bottom: 20px;
   font-size: 32px;
@@ -164,6 +211,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 25px;
+
 }
 
 .skills-box {
@@ -195,7 +243,22 @@
   #bio-container {
     min-height: auto;
     border-right: none;
-    border-bottom: 5px solid var(--bio-border-color);
+   
+  }
+
+  .bio-container__grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .item1 {
+    order: 2;
+  }
+  
+  .item2 {
+    order: 1;
   }
 
   #bio-container h2 {
