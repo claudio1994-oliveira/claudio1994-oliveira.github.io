@@ -229,6 +229,24 @@
   border-left: 5px solid var(--main-color);
 }
 
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  display: none;
+}
+
+.swiper-pagination {
+  position: initial;
+  margin: .5em 0;
+}
+
+
 .skills-box i {
   font-size: 45px;
   margin-right: 10px;

@@ -14,6 +14,7 @@
     rel="stylesheet">
   <!-- Dev Icon Fonts -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- CSS do Projeto -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -34,7 +35,7 @@
 
     <section id="about-container">
       <h2 id="name">Sobre mim</h2>
-      <p id="title"><span class="highlight">Desenvolvedor PHP</span></p>
+      <p id="title"><span class="highlight">Desenvolvedor Full Stack PHP</span></p>
       <p class="description">Sou apaixonado por tecnologia, melhores praticas de desenvolvimento e pelo mundo da Web.
         <span class="highlight">Acredito no poder do conhecimento como ferramenta de crescimento individual e em equipe.
           Por isso, creio que
@@ -87,12 +88,52 @@
         </div>
       </div>
     </section>
+    <section id="projects-container">
+      <h2 id="skills-section-title">Eventos e Workshops</h2>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/summit.png" alt="Summit PHP"></div>
+          <div class="swiper-slide"><img src="img/phppest.png" alt="Summit PHP"></div>
+          <div class="swiper-slide"><img src="img/livewire-na-pratica.png" alt="Summit PHP"></div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
   </main>
   <!-- Ion Icons -->
   <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/typewriter.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      speed: 400,
+      stopOnLastSlide: false,
+      spaceBetween: 5,
+      slidesPerView: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    });
+  </script>
 </body>
 
 </html>
