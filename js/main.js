@@ -7,5 +7,3 @@ const App = {
 }; 
 
 Vue.createApp(App).mount('#container');
-
-console.log('Hello World from main.js!');

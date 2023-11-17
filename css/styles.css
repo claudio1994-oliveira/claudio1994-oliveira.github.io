@@ -71,7 +71,7 @@
 
 .bio-container__grid .title {
   flex: 1 1 0;
-  font-size: 42px;
+  font-size: 52px;
   margin-bottom: 25px;
   font-weight: bold;
 
@@ -84,8 +84,9 @@
   margin-bottom: 20px;
 }
 
-#bio-container #welcome-text {
-  font-weight: bold;
+.welcome-text {
+  
+  font-size: 18px;
 }
 
 #bio-image {
