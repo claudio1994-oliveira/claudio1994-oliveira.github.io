@@ -171,6 +171,27 @@
   display: flex;
 }
 
+.btn-contact {
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--main-text-color);
+  background-color: transparent;
+  border: 2px solid var(--skills-bg-color);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: .5s;
+  margin: 25px 0;
+  padding: 12px 10px;
+  width: 173px;
+  text-align: center;
+  display: flex;
+}
+
+.btn-contact:hover {
+  background-color: var(--orange);
+  color: var(--main-text-color);
+}
+
 #btn-projects-two {
   font-weight: bold;
   font-size: 16px;
@@ -259,6 +280,13 @@
     flex-direction: column;
   }
 
+  h2 {
+  
+    font-size: 8px; /* Ajuste o tamanho conforme necessário */
+    
+  }
+  
+
   #bio-container {
     min-height: auto;
     border-right: none;
@@ -269,7 +297,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+  }
+
+  .btn-contact {
+    width: 100%; 
+    margin: 20px auto; 
+    display: block; 
   }
 
   .item1 {
@@ -281,6 +315,10 @@
   }
 
   #bio-container h2 {
+    font-size: 22px;
+  }
+
+  #bio-container #bio-image {
     display: none;
   }
 
