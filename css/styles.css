@@ -152,8 +152,9 @@
   align-items: center;
   list-style: none;
   margin-bottom: 25px;
- 
+ justify-content: space-around;
 }
+
 
 #btn-projects {
   font-weight: bold;
@@ -300,18 +301,23 @@
     justify-content: center;
   }
 
+
   .btn-contact {
     width: 100%; 
     margin: 20px auto; 
     display: block; 
   }
 
-  .item1 {
-    order: 2;
+  #btn-projects {
+    width: 100%; 
+    margin: 20px auto; 
+    display: block; 
   }
-  
-  .item2 {
-    order: 1;
+
+  .btns__main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   #bio-container h2 {
@@ -338,9 +344,6 @@
     line-height: 26px;
   }
 
-  #btn-projects {
-    margin: 20px auto;
-  }
 
   .skills-box {
     flex: 1 1 100%;
