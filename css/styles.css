@@ -274,6 +274,15 @@
   margin-right: 10px;
 }
 
+.page-footer {
+  background-color: var(--bio-bg-color); /* Cor de fundo do rodapé */
+  color: #fff; /* Cor do texto do rodapé */
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
+
 /* Mobile */
 @media(max-width: 450px) {
 
