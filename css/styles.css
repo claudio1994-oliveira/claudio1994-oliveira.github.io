@@ -20,15 +20,16 @@
 
 /* General */
 .highlight {
+  font-family: 'Roboto Mono', monospace;
   color: var(--main-color);
 }
 
 /* Containers */
 #container {
-  
- 
+   
   color: var(--main-text-color);
 }
+
 
 #bio-container {
   flex: 1 1 20%;
@@ -61,13 +62,6 @@
   justify-content: space-around;
 }
 
-.item1 {
-  order: 1;
-}
-
-.item2 {
-  order: 2;
-}
 
 .bio-container__grid .title {
   flex: 1 1 0;
@@ -144,6 +138,7 @@
 
 .description {
   max-width: 75%;
+  margin-top: 10px; ;
   margin-bottom: 10px;
 }
 
@@ -223,6 +218,7 @@
 #btn-projects:hover {
   background-color: transparent;
 }
+
 
 #skills-section-title {
   padding-top: 20px;
