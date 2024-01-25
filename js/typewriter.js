@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Array de textos que serão exibidos com efeito de typewriter
     const texts = [
       "<?php ",
-      "echo('Bem vindo!')",
+      "echo('Bem vindo(a)!')",
       "?>",
 
     ];
