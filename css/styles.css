@@ -72,15 +72,6 @@
 
 }
 
-.portifolio_items {
-  display: flex;
-}
-
-.portifolio_items img {
-  width: 400px;
-  height: 400px;
- 
-}
 
 /* Bio container */
 
@@ -294,7 +285,7 @@ h2 {
 
   h2 {
   
-    font-size: 8px; /* Ajuste o tamanho conforme necessário */
+    font-size: 8px;
     
   }
   
@@ -354,18 +345,6 @@ h2 {
     max-width: 100%;
     line-height: 26px;
   }
-
-  .portifolio_items {
-    display: block;
-  }
-  
-  .portifolio_items img {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    
-  }
-
 
   .skills-box {
     flex: 1 1 100%;
