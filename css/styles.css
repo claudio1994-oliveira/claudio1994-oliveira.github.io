@@ -34,7 +34,7 @@
 #bio-container {
   flex: 1 1 20%;
   min-height: 100vh;
-  background-color: var(--bio-bg-color);
+  background-color: #17191d;
   text-align: center;
   padding: 30px 12px;
   border-right: 5px solid var(--bio-border-color);
@@ -44,16 +44,16 @@
   flex: 1 1 80%;
   align-items: center;
   min-height: 100vh;
-  background-color: var(--about-bg-color);
+  background-color: #17191d;
   padding: 50px;
 }
 
 #projects-container {
   flex: 1 1 80%;
   min-height: 100vh;
-  background-color: var(--skills-bg-color);
+  background-color: #17191d;
   padding: 50px;
-  color: #13131F;
+  
 }
 
 .bio-container__grid {
@@ -136,7 +136,7 @@
 }
 
 /* about container */
-#name {
+h2 {
   font-size: 42px;
   margin-bottom: 15px;
 }
@@ -231,11 +231,6 @@
 }
 
 
-#skills-section-title {
-  padding-top: 20px;
-  margin-bottom: 20px;
-  font-size: 32px;
-}
 
 #skills-container {
   display: flex;
