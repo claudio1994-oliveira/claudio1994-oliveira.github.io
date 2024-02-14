@@ -31,6 +31,7 @@ body {
   position: fixed;
   background-color: rgba(23, 25, 29, 0.6);
   backdrop-filter: blur(8px);
+  z-index: 1000;
 }
 .menu ul {
   display: flex;
@@ -51,9 +52,11 @@ body {
   transition: .5s;
 }
 
+
 .menu a:hover {
+  
   color: var(--orange);
-  border-bottom: 2px solid var(--main-text-color);
+  border-bottom: 2px solid var(--main-text-color) !important;
 }
 
 .highlight {
@@ -67,7 +70,6 @@ body {
   min-height: 100vh;
   text-align: center;
   padding: 30px 12px;
-  border-right: 5px solid var(--bio-border-color);
   align-items: center;
   justify-content: space-around;
 }
